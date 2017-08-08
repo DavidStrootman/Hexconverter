@@ -7,7 +7,6 @@ function toRgb(hex) {
 	var remainder = toHexadecimal(decimal % 16);
 	
 	function toHexadecimal(decimal) {
-		this.decimal = decimal;
 		var hexadecimal = '';
 		switch(decimal) {
 			case 0:
@@ -61,5 +60,5 @@ function toRgb(hex) {
 		}
 		return hexadecimal;
 	}
-
+	
 }
