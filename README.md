@@ -1,7 +1,8 @@
-# hexrgb
+# decimal - hexadecimal
 hexadecimal <> decimal conversion 
 
-
+### In development
+partially working with switch for single digit conversion.
 input / 16
 
 if the result is larger than 16, get the decimals and multiply by 16.
