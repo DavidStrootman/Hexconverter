@@ -1,4 +1,6 @@
-
+/**
+ * Created by David on 7-9-2017.
+ */
 
 // function toHexadecimal
 function toHexadecimal(input, format) {
