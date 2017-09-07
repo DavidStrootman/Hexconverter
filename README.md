@@ -1,9 +1,13 @@
-# decimal - hexadecimal
-decimal to hexadecimal conversion 
+# Hexconverter
+converts decimals colors to hexadecimals.
 
-Call toHexadecimal(decimal, 'datatype') on a decimal value to convert it to hexadecimal.
+#### toHexadecimal(int,'datatype')
+parameters are: integer for conversion, datatype 'arr' or 'str'.
+returns hexadecimal as anarray of strings if datatype = 'arr'.
+returns hexadecimal as a string if datatype = 'str'
 
+#### Example
 
-##### datatype accepts 'str' and 'arr'.  
-'str' returns the hexadecimal value as a string.
-'arr' returns the hexadecimal value as an array of strings.
+convert([96,96,196])
+
+~[300,51,76.9]
