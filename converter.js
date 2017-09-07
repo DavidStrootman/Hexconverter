@@ -3,7 +3,6 @@
 // function toHexadecimal
 function toHexadecimal(input, format) {
     var Hexadecimal = [];
-    var calculations = 0;
     var decimal = 0;
     var hexDigit = 0;
     "use strict";
@@ -69,7 +68,6 @@ function toHexadecimal(input, format) {
         hexDigit = convertDigit(decimal);
         Hexadecimal.push(hexDigit);
         input = input / 16;
-        calculations += 1;
     }
 
     Hexadecimal.push(convertDigit(Math.trunc(input)));
