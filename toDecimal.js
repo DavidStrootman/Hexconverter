@@ -2,6 +2,7 @@
  * Created by David on 8-9-2017.
  */
 
+// Function toDecimal
 function toDecimal(Input) {
     "use strict";
     var hexaDecimal = Input;

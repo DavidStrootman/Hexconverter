@@ -2,7 +2,7 @@
  * Created by David on 7-9-2017.
  */
 
-// function toHexadecimal
+// Function toHexadecimal
 function toHexadecimal(input, format) {
     var Hexadecimal = [];
     var decimal = 0;

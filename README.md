@@ -1,5 +1,5 @@
 # HEXDECconverter
-javascripts for Hexadecimal to Decimal conversion and vice versa.
+javascript functions for Hexadecimal to Decimal conversion and vice versa.
 
 #### toHexadecimal(int,'datatype')
 parameters are: integer for conversion, datatype 'arr' or 'str'.
