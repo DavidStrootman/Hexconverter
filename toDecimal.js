@@ -2,12 +2,22 @@
  * Created by David on 8-9-2017.
  */
 
+/**
+ * returns the decimal equivalent of the hexadecimal input
+ * @param {string} Input
+ * @returns {Array} decimal
+ */
 function toDecimal(Input) {
     "use strict";
     var hexaDecimal = Input;
     var decimal = [];
     var pw = decimal.length;
 
+    /**
+     * Converts single Hexadecimal numbers to decimal equivalent
+     * @param {string} Hexadecimal
+     * @returns {string} decimalValue
+     */
     function convertDigit(Hexadecimal) {
         var decimalValue = "";
         switch (Hexadecimal) {
@@ -63,6 +73,12 @@ function toDecimal(Input) {
         return decimalValue;
     }
 
+    /**
+     * Adds b to a
+     * @param {int} a
+     * @param {int} b
+     * @returns {int} a + b
+     */
     function add(a, b) {
         return a + b;
     }
@@ -70,10 +86,12 @@ function toDecimal(Input) {
     for  (var i = 0, len = hexaDecimal.length; i < len; i++) {
         decimal.push(parseInt(convertDigit(hexaDecimal[i])));
     }
+
     for (i = 0, len = decimal.length; i < len; i++) {
         decimal[i] = decimal[i] * Math.pow(16,pw - 1);
         pw--;
     }
+
     parseInt(decimal.toString(""));
 
     decimal = decimal.reduce(add, 0);
