@@ -2,9 +2,9 @@
 javascript functions for Hexadecimal to Decimal conversion and vice versa.
 
 #### toHexadecimal(int,'datatype')
-parameters are: integer for conversion, datatype 'arr' or 'str'.
-returns hexadecimal as an array of strings if datatype = 'arr'.
-returns hexadecimal as a string if datatype = 'str'
+parameters: integer for conversion, datatype to be returned: 'arr' or 'str'.
+returns hexadecimal as an array of strings if data type = 'arr'.
+returns hexadecimal as a string if data type = 'str'
 
 ##### Example:
 
