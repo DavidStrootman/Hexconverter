@@ -5,7 +5,7 @@
 /**
  * returns the decimal equivalent of the hexadecimal input
  * @param {string} Input
- * @returns {Array} decimal
+ * @returns {int} decimal
  */
 function toDecimal(Input) {
     "use strict";
