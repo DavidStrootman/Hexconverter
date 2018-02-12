@@ -9,9 +9,8 @@
  */
 function toDecimal(Input) {
     "use strict";
-    var hexaDecimal = Input;
-    var decimal = [];
-    var pw = decimal.length;
+    const hexaDecimal = Input;
+    let decimal = [];
 
     /**
      * Converts single Hexadecimal numbers to decimal equivalent
@@ -19,7 +18,7 @@ function toDecimal(Input) {
      * @returns {string} decimalValue
      */
     function convertDigit(Hexadecimal) {
-        var decimalValue = "";
+        let decimalValue = "";
         switch (Hexadecimal) {
             case "0":
                 decimalValue = "0";
@@ -83,11 +82,12 @@ function toDecimal(Input) {
         return a + b;
     }
 
-    for  (var i = 0, len = hexaDecimal.length; i < len; i++) {
+    for  (let i = 0, len = hexaDecimal.length; i < len; i++) {
         decimal.push(parseInt(convertDigit(hexaDecimal[i])));
     }
+    let pw = decimal.length;
 
-    for (i = 0, len = decimal.length; i < len; i++) {
+    for (let i = 0, len = decimal.length; i < len; i++) {
         decimal[i] = decimal[i] * Math.pow(16,pw - 1);
         pw--;
     }
